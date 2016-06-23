@@ -1,0 +1,18 @@
+<section id="about_me">
+    <div class="container">
+        <h3>Education:</h3>
+        {% for education in educations %}
+        <header>
+            <h4>{{ education['school_name'] }}</h4>
+            <p><i class="fa fa-calendar">  {{ date_formatting(education['date_from']) }}
+                - {{ date_formatting(education['date_to']) or 'Present' }}&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                <i class="fa fa-globe" aria-hidden="true">  {{ education['location'] }}&nbsp;&nbsp;&nbsp;&nbsp;</i>
+            </p>
+        </header>
+        <p>
+            &nbsp;&nbsp;{{ education['name'] }}<br>
+        </p>
+        <hr>
+        {% end %}
+    </div>
+</section>

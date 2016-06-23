@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block 'content' %}
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-5">
+            <h1>Educations</h1>
+            {% for education in educations %}
+            <form role="form" action="{{ request.path }}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" placeholder="Name" name="name" value="{{ education['name'] }}" required>
+                </div>
+                <div class="form-group">
+                    <label>School name</label>
+                    <input class="form-control" placeholder="School name" name="school_name" value="{{ education['school_name'] }}" required>
+                </div>
+                <div class="form-group">
+                    <label>Date From</label>
+                    <input class="form-control" placeholder="Date From" name="date_from" value="{{ education['date_from'] }}" required>
+                </div>                        <div class="form-group">
+                <label>Date To</label>
+                <input class="form-control" placeholder="Date To" value="{{ education['date_to'] }}" name="date_to">
+            </div>
+                <div class="form-group">
+                <label>Location</label>
+                <input class="form-control" placeholder="Location" value="{{ education['location'] }}" name="location" required>
+            </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-default">Reset</button>
+            </form>
+            <hr>
+            {% end %}
+        </div>
+
+        <div class="col-lg-5">
+            <h1>Add new education</h1>
+            <form role="form" action="{{ request.path }}" method="post">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" placeholder="Name" name="name" value="" required>
+                </div>
+                <div class="form-group">
+                    <label>School name</label>
+                    <input class="form-control" placeholder="School name" name="school_name" value="" required>
+                </div>
+                <div class="form-group">
+                    <label>Date From</label>
+                    <input class="form-control" placeholder="Date From" name="date_from" value="" required>
+                </div>                        <div class="form-group">
+                <label>Date To</label>
+                <input class="form-control" placeholder="Date To" value="" name="date_to">
+            </div>
+                <div class="form-group">
+                <label>Location</label>
+                <input class="form-control" placeholder="Location" value="" name="location" required>
+            </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-default">Reset</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% end %}

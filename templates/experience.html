@@ -1,0 +1,18 @@
+<section id="experience">
+    <div class="container">
+        <h3>My Expirience</h3>
+        {% for job in experience %}
+        <header>
+            <h4>{{ job['position'] }} at "{{ job['company_name'] }}"</h4>
+            <p><i class="fa fa-calendar">  {{ date_formatting(job['date_from']) }} - {{ date_formatting(job['date_to']) or 'Present' }}&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                <i class="fa fa-link" aria-hidden="true">  <a href="{{ job['web_site'] }}">www</a>&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                <i class="fa fa-users" aria-hidden="true">  {{ job['workers_amount'] }}&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                <i class="fa fa-globe" aria-hidden="true">  {{ job['location'] }}&nbsp;&nbsp;&nbsp;&nbsp;</i>
+            </p>
+        </header>
+        <p>
+            &nbsp;&nbsp;{{ job['company_description'] }}<br>&nbsp;&nbsp;{{ job['my_responsobility'] }}
+        </p><hr>
+        {% end %}
+    </div>
+</section>

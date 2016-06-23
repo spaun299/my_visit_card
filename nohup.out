@@ -1,0 +1,1195 @@
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 12.28ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 4.64ms
+WARNING:tornado.access:404 GET /favicon.ico (37.73.240.122) 3.73ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (37.73.240.122) 0.59ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (37.73.240.122) 2.91ms
+WARNING:tornado.access:404 GET /favicon.ico (188.230.84.130) 4.12ms
+WARNING:tornado.access:404 GET /favicon.ico (188.230.84.130) 3.56ms
+WARNING:tornado.access:404 GET /favicon.ico (188.230.84.130) 5.36ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 3.04ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 1.41ms
+WARNING:tornado.access:404 GET /favicon.ico (104.45.18.178) 2.87ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd19a35f0>, <tornado.concurrent.Future object at 0x7fedcb5ec890>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-23...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.100) 2.49ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedcb5e3f80>, <tornado.concurrent.Future object at 0x7fedd0082510>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-24...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.207) 3.20ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0ebd4d0>, <tornado.concurrent.Future object at 0x7fedd0089750>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-24...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.207) 3.30ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 4.15ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd01b37a0>, <tornado.concurrent.Future object at 0x7fedcb5dfa90>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-25...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.171) 3.24ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.68) 4.79ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd135da70>, <tornado.concurrent.Future object at 0x7fedd01194d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-25...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.171) 3.81ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd01b3050>, <tornado.concurrent.Future object at 0x7fedcb5df2d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-26...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.85ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0e9b4d0>, <tornado.concurrent.Future object at 0x7fedcabb3310>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-26...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.74ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 3.00ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd199ff80>, <tornado.concurrent.Future object at 0x7fedcb5d0b50>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-26...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.78ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.81.208) 6.36ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0ead170>, <tornado.concurrent.Future object at 0x7fedd011f750>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-26...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.99ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd135d320>, <tornado.concurrent.Future object at 0x7fedcb5c8310>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-26...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.51ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd19a33b0>, <tornado.concurrent.Future object at 0x7fedd0e7f0d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-26...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 4.94ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.102) 4.61ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0e9b680>, <tornado.concurrent.Future object at 0x7fedd00f6710>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-27...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.05ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd19a3b00>, <tornado.concurrent.Future object at 0x7fedd012fed0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-27...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.89ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd135d0e0>, <tornado.concurrent.Future object at 0x7fedd0119e50>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-27...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.26ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0e9b200>, <tornado.concurrent.Future object at 0x7fedcabb3b90>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-27...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.05ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0e9b440>, <tornado.concurrent.Future object at 0x7fedd0119a10>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-28...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.26ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.05ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.102) 2.90ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd19a3950>, <tornado.concurrent.Future object at 0x7fedd0089750>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-28...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 8.30ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd199f9e0>, <tornado.concurrent.Future object at 0x7fedcab3d7d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-28...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.95ms
+WARNING:tornado.access:404 GET /favicon.ico (69.171.228.118) 2.73ms
+WARNING:tornado.access:404 GET /favicon.ico (173.252.121.116) 3.18ms
+WARNING:tornado.access:404 GET /favicon.ico (66.220.145.244) 3.69ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0e813b0>, <tornado.concurrent.Future object at 0x7fedcb5f9410>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-28...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (83.28.198.183) 4.43ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0ead950>, <tornado.concurrent.Future object at 0x7fedd134fbd0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-28...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.29ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd1357f80>, <tornado.concurrent.Future object at 0x7fedd0eb5590>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-28...
+                                                             ^
+
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd134b290>, <tornado.concurrent.Future object at 0x7fedcb5d39d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 5.16ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd00cbef0>, <tornado.concurrent.Future object at 0x7fedcabb3150>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.56ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd01aa170>, <tornado.concurrent.Future object at 0x7fedcb5df9d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.80ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0ec3b90>, <tornado.concurrent.Future object at 0x7fedcab44450>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.10ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd1357b90>, <tornado.concurrent.Future object at 0x7fedd0eafb90>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.88ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd00cba70>, <tornado.concurrent.Future object at 0x7fedcab44150>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.02ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd19a39e0>, <tornado.concurrent.Future object at 0x7fedd01693d0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-29...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.89ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd0bda9e0>, <tornado.concurrent.Future object at 0x7fedd0141fd0>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-30...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 2.48ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd00cb830>, <tornado.concurrent.Future object at 0x7fedd0eaf750>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-04-30...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 4.92ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7fedd01aa170>, <tornado.concurrent.Future object at 0x7fedd017b810>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/hanlers.py", line 34, in save_user
+    location=location, date=date, time=time, ip=ip
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "2016"
+LINE 2: ...                       VALUES ('Ukraine/Sokal'', '2016-05-01...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (213.5.193.204) 3.04ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.97ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 4.61ms
+WARNING:tornado.access:404 GET /admion (95.215.156.204) 2.45ms
+ERROR:tornado.general:Could not open static file '/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/static/images/skills/Linux/Debian.png'
+ERROR:tornado.general:Could not open static file '/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/static/images/skills/Linux/Ubuntu.png'
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.25ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.14ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.102) 2.89ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.102) 22.98ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 30.73ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 11.32ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 11.15ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 10.79ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 8.61ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.102) 9.96ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 6.00ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 9.67ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.86) 12.09ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.43ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 10.11ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 9.42ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 8.02ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 14.19ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 8.02ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.23ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.87ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.40ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.79ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.86) 9.60ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 10.33ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 8.37ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 5.38ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.70ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 10.82ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 6.53ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 3.05ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 1.08ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 6.73ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.88ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 10.38ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.86) 17.71ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 11.68ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.68) 6.87ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 9.11ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 9.23ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.102) 10.52ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 11.13ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.68) 9.78ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 9.29ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.94) 5.98ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 11.32ms
+ERROR:tornado.application:Exception in callback functools.partial(<function wrap.<locals>.null_wrapper at 0x7f2c700c4320>, <tornado.concurrent.Future object at 0x7f2c6f236390>)
+Traceback (most recent call last):
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 600, in _run_callback
+    ret = callback()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/ioloop.py", line 615, in <lambda>
+    self.add_future(ret, lambda f: f.result())
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1014, in run
+    yielded = self.gen.throw(*exc_info)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/app-root/runtime/repo/admin.py", line 241, in save_update_company
+    yield self.db.execute(str_to_execute)
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/gen.py", line 1008, in run
+    value = future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 472, in when_done
+    result = rfut.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib/python3.3/site-packages/momoko/connection.py", line 701, in _io_callback
+    state = self.connection.poll()
+psycopg2.ProgrammingError: syntax error at or near "ve"
+LINE 5: ...ctive, good working conditions. In this company I've explore...
+                                                             ^
+
+WARNING:tornado.access:404 GET /favicon.ico (194.44.136.82) 2.22ms
+WARNING:tornado.access:404 GET /favicon.ico (194.44.136.82) 0.96ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.56ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.75ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.09ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.73ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 3.07ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 1.64ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.40ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.92ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.96) 2.39ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.18ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.99ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.43ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.88ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.44ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.97ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.34ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.49ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 3.74ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.85ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.20ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.05ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.98) 12.10ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 11.17ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.00ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.31ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.79ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 5.08ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.48ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.46ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.93ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 1.31ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.35ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.55ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.91ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.36ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.92ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.44ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.36ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.35ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.07ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.41ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.57ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.27ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.10ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 4.06ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 0.85ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.38ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.77ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.30ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.41ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.34ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.73ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.46ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.78ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Debian.png (95.215.156.204) 2.57ms
+WARNING:tornado.access:404 GET /static/images/skills/Linux/Ubuntu.png (95.215.156.204) 1.00ms
+WARNING:tornado.access:404 GET /favicon.ico (37.73.220.31) 2.29ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (37.73.220.31) 0.93ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (37.73.220.31) 0.57ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.96) 6.75ms
+Traceback (most recent call last):
+  File "run.py", line 44, in <module>
+    start_app()
+  File "run.py", line 37, in start_app
+    app = Application()
+  File "run.py", line 33, in __init__
+    future.result()
+  File "/var/lib/openshift/5715f2707628e1311d0000fe/python/virtenv/venv/lib64/python3.3/site-packages/tornado/concurrent.py", line 232, in result
+    raise_exc_info(self._exc_info)
+  File "<string>", line 3, in raise_exc_info
+momoko.exceptions.PartiallyConnectedError: 1 connection(s) failed to connect
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 3.20ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (95.215.156.204) 0.42ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (95.215.156.204) 0.59ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.28ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (95.215.156.204) 0.49ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (95.215.156.204) 1.24ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.38ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (95.215.156.204) 0.51ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (95.215.156.204) 0.60ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.18ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (95.215.156.204) 0.52ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (95.215.156.204) 0.61ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.114) 7.61ms
+WARNING:tornado.access:404 GET /favicon.ico (46.219.250.224) 7.22ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (46.219.250.224) 0.53ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 13.26ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 2.33ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (95.215.156.204) 0.79ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (95.215.156.204) 0.65ms
+WARNING:tornado.access:404 GET /favicon.ico (66.102.9.104) 6.52ms
+WARNING:tornado.access:404 GET /favicon.ico (66.249.93.239) 15.24ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 4.42ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (95.215.156.204) 0.48ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (95.215.156.204) 0.57ms
+WARNING:tornado.access:404 GET /apple-touch-icon-precomposed.png (46.219.245.199) 24.07ms
+WARNING:tornado.access:404 GET /favicon.ico (46.219.245.199) 16.05ms
+WARNING:tornado.access:404 GET /apple-touch-icon.png (46.219.245.199) 0.88ms
+WARNING:tornado.access:404 GET /favicon.ico (95.215.156.204) 20.00ms

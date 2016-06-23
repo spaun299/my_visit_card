@@ -1,0 +1,6 @@
+tornado==4.3
+psycopg2==2.6.1
+simplejson==3.8.2
+momoko==2.2.2
+geoip2==2.2.0
+pytz

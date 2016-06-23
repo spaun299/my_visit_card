@@ -1,0 +1,68 @@
+<section id="my_projects">
+    <div class="container">
+        <h3>The Projects in which I participated</h3>
+        <div class="features">
+            {% for project in projects %}
+            {% set read_less_id=str(project) + '_read_less' %}
+            {% set read_more_id=str(project) + '_read_more'  %}
+            <article>
+                <a href="{{ projects[project]['data']['web_site'] }}" class="image" style="float: left"><img
+                        src="{{ static_url(projects[project]['data']['logo_link']) }}" alt=""/></a>
+                <h4>{{ projects[project]['data']['name'] }}</h4>
+                <header>
+                    <p><i class="fa fa-calendar">  {{ projects[project]['data']['months_spend'] }}
+                        months&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <i class="fa fa-link" aria-hidden="true"> <a
+                                href="{{ projects[project]['data']['web_site'] }}">www</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        </i>
+                        <i class="fa fa-users"
+                           aria-hidden="true">  {{ projects[project]['data']['team_size'] }}&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                    </p><br>
+                </header>
+                {% if projects[project]['data']['short_description'] %}
+                <div id="{{ read_less_id }}">
+                    <p>{{ projects[project]['data']['short_description'] }}...
+                    <a  style="cursor: pointer;" onclick="read_less_more('{{ read_less_id }}', '{{ read_more_id }}', 'more')">read more</a></p>
+                </div>
+                {% else %}
+                <div id="{{ read_less_id }}">
+                    <p>{{ projects[project]['data']['description'] }}...
+                    <a  style="cursor: pointer;" onclick="read_less_more('{{ read_less_id }}', '{{ read_more_id }}', 'more')">read more</a></p>
+                </div>
+                {% end %}
+                <div id="{{ read_more_id }}" hidden>
+                <p>{{ projects[project]['data']['description'] }}
+                </p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Company</td>
+                        <td>{{ projects[project]['data']['company_name'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Project type</td>
+                        <td>{{ projects[project]['data']['type'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>{{ projects[project]['data']['status'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Web Site</td>
+                        <td>
+                            <a href="{{ projects[project]['data']['web_site'] }}">{{ projects[project]['data']['web_site'] }}</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                    {% for skill in projects[project]['skills'] %}
+                    <a href="{{ projects[project]['skills'][skill]['web_site'] }}"><img src="{{ static_url(projects[project]['skills'][skill]['icon']) }}" width="20px"></a>&nbsp;
+                    {% end %}<br>
+                    <a  style="cursor: pointer;" onclick="read_less_more('{{ read_less_id }}', '{{ read_more_id }}', 'less')"> read less</a>
+                    </div>
+                <br>
+            </article>
+            {% end %}
+        </div>
+    </div>
+</section>

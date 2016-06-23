@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block 'content' %}
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>Ignored Ips</h1>
+                <div class="form-group">
+                    <input type="text" id="ip">
+                    <button type="submit" class="btn btn-link" name="ip"
+                            onclick="add_remove_ip(url='{{ request.path }}', true)">Add</button>
+                </div>
+            <div id="ids">
+            {% for ip in ips %}
+            {{ ip['ip'] }}<button type="submit" class="btn btn-link" name="ip"
+                            onclick="add_remove_ip(url='{{ request.path }}', false, '{{ ip['ip'] }}')
+                                    ">X</button><br>
+            {% end %}
+                </div>
+
+        </div>
+    </div>
+</div>
+{% end %}

@@ -1,0 +1,27 @@
+<section id="contact_me">
+    <div class="container">
+        <h3>Contact Me</h3>
+        <p>Send me message via form below, or contact me with any of my contacts</p>
+        <form id="email_form">
+            <div class="row uniform">
+                <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+                <div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" required/></div>
+            </div>
+            <div class="row uniform">
+                <div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" required/></div>
+            </div>
+            <div class="row uniform">
+                <div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6" required></textarea></div>
+            </div>
+
+        </form>
+                    <div class="row uniform">
+                <div class="12u">
+                    <ul class="actions">
+                        <li><input type="submit" class="special" value="Send Message" onclick="send_email()"/></li>
+                        <li><input type="reset" value="Reset Form" /></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</section>

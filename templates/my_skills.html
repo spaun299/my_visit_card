@@ -1,0 +1,13 @@
+<section id="my_skills">
+    <div class="container">
+        <h3>Things I Know</h3>
+        <p>Below are skills that I know at the intermediate or higher level.</p>
+        <ul class="feature-icons">
+            {% for skill in skills %}
+            <li><a href="http://{{ skill['web_site'] }}"><img src="{{ static_url(skill['icon_link']) }}" width="30px">
+                <span style="padding-top: 0; padding-left: 10px; position: absolute">{{ skill['name'] }}
+                </span></a></li>
+            {% end %}
+        </ul>
+    </div>
+</section>

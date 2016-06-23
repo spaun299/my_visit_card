@@ -1,0 +1,47 @@
+<section id="about_me">
+	<div class="container">
+		<header class="major">
+			<h2>About me</h2>
+			<p>{{ me['short_description'] }}</p>
+		</header>
+		<p>&nbsp;&nbsp;{{ me['description'] }}<br>
+            &nbsp;&nbsp;For now I live in {{ me['location'] }}, but I'm open for proposals with relocation to another country.<br>
+        &nbsp;&nbsp;My native language is Ukrainian, but I know Russian very well, and I have {{ me['english_level'] }} level of English.
+        Currently I'm learning English and I really want to rich very high English level.</p>
+        <a  style="cursor: pointer;" onclick="show_hide_contact()" id="show_contacts_button">Show contacts</a></p>
+        <div id="show_contacts" hidden>
+        <h3>My contacts:</h3>
+            <table>
+                    <tr>
+                        <td>Skype</td>
+                        <td>{{ me['skype'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{ me['email'] }}</td>
+                    </tr>
+                                    <tr>
+                        <td>Phone</td>
+                        <td>{{ me['phone'] }}</td>
+                    </tr>
+                                    <tr>
+                        <td>Linkedin</td>
+                        <td>{{ me['linkedin_link'] }}</td>
+                    </tr>
+                                    <tr>
+                        <td>Facebook</td>
+                        <td>{{ me['facebook_link'] }}</td>
+                    </tr>
+                                    <tr>
+                        <td>Github</td>
+                        <td>{{ me['github_link'] }}</td>
+                    </tr>
+                                    <tr>
+                        <td>Bitbucket</td>
+                        <td>{{ me['bitbucket_link'] }}</td>
+                    </tr>
+                </table>
+            </div>
+        <hr>
+	</div>
+</section>

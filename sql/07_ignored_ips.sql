@@ -1,0 +1,3 @@
+CREATE SEQUENCE ignored_ips;
+CREATE TABLE IF NOT EXISTS ignore_ips(id INT PRIMARY KEY NOT NULL DEFAULT nextval('ignored_ips'),
+ip VARCHAR(20) NOT NULL );

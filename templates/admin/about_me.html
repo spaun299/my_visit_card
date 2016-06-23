@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block 'content' %}
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>About me</h1>
+            <form role="form" action="{{ request.path }}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input class="form-control" placeholder="Phone" name="phone" value="{{me['phone']}}" required>
+                </div>
+                <div class="form-group">
+                    <label>Skype</label>
+                    <input class="form-control" placeholder="Skype" name="skype" value="{{me['skype']}}" required>
+                </div>
+                <div class="form-group">
+                    <label>GitHub Link</label>
+                    <input class="form-control" placeholder="GitHub" name="github_link" value="{{me['github_link']}}" required>
+                </div>                        <div class="form-group">
+                <label>Linkedin Link</label>
+                <input class="form-control" placeholder="Linkedin" value="{{me['linkedin_link']}}" name="linkedin_link">
+            </div>                        <div class="form-group">
+                <label>Bitbucket Link</label>
+                <input class="form-control" placeholder="Bitbucket" value="{{me['bitbucket_link']}}" name="bitbucket_link">
+            </div>
+                <div class="form-group">
+                    <label>Facebook Link</label>
+                    <input class="form-control" placeholder="Facebook" value="{{me['facebook_link']}}" name="facebook_link">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" placeholder="Email" name="email" value="{{me['email']}}">
+                </div>
+                <div class="form-group">
+                    <label>Email Password</label>
+                    <input class="form-control" type="password" placeholder="Email Password" name="email_password" value="{{me['email_password']}}">
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input class="form-control" placeholder="Location" name="location" value="{{me['location']}}">
+                </div>
+                <div class="form-group">
+                    <label>English Level</label>
+                    <select class="form-control" name="english_level">
+                        {% for level in english_levels %}
+                        {% if me['english_level']==level %}
+                        <option selected>{{ level }}</option>
+                        {% else %}
+                        <option>{{ level }}</option>
+                        {% end %}{% end %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Job status</label>
+                    <input class="form-control" placeholder="Status" name="status" value="{{me['status']}}">
+                </div>
+                <div class="form-group">
+                    <label>About me</label>
+                    <textarea class="form-control" rows="10" name="description">{{me['description']}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Short description</label>
+                    <textarea class="form-control" rows="3" name="short_description">{{me['short_description']}}</textarea>
+                </div>
+                <div class="form-group">
+                    <label>My photo</label>
+                    <input type="file" name="photo">
+                </div>
+                <button type="submit" class="btn btn-default">Submit Button</button>
+                <button type="reset" class="btn btn-default">Reset Button</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% end %}

@@ -1,0 +1,25 @@
+<section id="header" style="zoom: 70%;">
+	<header>
+		<span class="image avatar"><img src="{{ static_url('images/avatar.png') }}" alt="" /></span>
+		<h1 id="logo"><a href="#">Viktor Kobryn Portfolio</a></h1>
+		<p>{{ me['status'] }}</p>
+	</header>
+	<nav id="nav">
+		<ul>
+			<li><a href="#about_me" class="active">About me</a></li>
+			<li><a href="#my_skills">My Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+			<li><a href="#my_projects">My Projects</a></li>
+			<li><a href="#contact_me">Contact me</a></li>
+		</ul>
+	</nav>
+	<footer>
+		<ul class="icons">
+			<li><a href="{{ me['facebook_link'] }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="{{ me['linkedin_link'] }}" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+			<li><a href="{{ me['bitbucket_link'] }}" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+			<li><a href="{{ me['github_link'] }}" class="icon fa-github"><span class="label">Github</span></a></li>
+			<li><a href="#contact_me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+	</footer>
+</section>

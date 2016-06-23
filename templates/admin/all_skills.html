@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block 'content' %}
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>All Skills</h1>
+            {% for skill in skills %}
+            {% module Template('admin/skill.html', skill=skill) %}
+            {%end%}
+        </div>
+        <div class="col-xs-6 col-sm-8">
+            <hr>
+        <form enctype="multipart/form-data" action="/admin/all_skills" method="post">
+        <label for="skill_name">Add new skill</label><br>
+            <input type="text" placeholder="Skill name" name="skill_name" id="skill_name" required>
+            <input type="text" placeholder="WebSite" name="web_site" id="web_site" required><br>
+            <label for="file_skill">Skill image</label>
+            <input id='file_skill' type="file" name="file_skill" required>
+            <br>
+            <input type="submit" value="Accept" style='color: #0b0b0b; width: 100px'>
+            </form>
+            </div>
+    </div>
+</div>
+{% end %}

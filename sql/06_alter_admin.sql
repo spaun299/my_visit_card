@@ -1,0 +1,1 @@
+ALTER TABLE admin ADD COLUMN email_pass VARCHAR(100);

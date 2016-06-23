@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block 'content' %}
+<div id="page-wrapper">
+    <div class="row">
+            <div class="col-lg-6">
+            <h1>Skills</h1>
+            {% for skill in all_skills %}
+                {% if skill['priority'] %}
+                <div style="border-radius: 10px; border-width: 5px; background-color: #1BA39C;
+                border-color: #1BA39C; border-style: dashed; color: black;" class="skill_div">
+                    {% module Template('admin/skill.html', skill=skill) %}
+                    <input type="checkbox" id="{{ skill['name'] }}" name="my_skill" onclick="add_my_skill({{ skill['name'] }})" checked>
+                    <input type="number" id="{{ skill['name'] }}" name="priority" onclick="add_my_skill({{ skill['name'] }})" value="{{ skill['priority'] }}" placeholder="Priority">
+                    </div>
+                    {% else %}
+                <div style="border-radius: 10px; border-width: 5px; background-color: #DADFE1;
+                border-color: #DADFE1; border-style: dashed; color: black;" class="skill_div">
+                    {% module Template('admin/skill.html', skill=skill) %}
+                    <input type="checkbox" id="{{ skill['name'] }}" name="my_skill" onclick="add_my_skill({{ skill['name'] }})">
+                    <input type="number" id="{{ skill['name'] }}" name="priority" onclick="add_my_skill({{ skill['name'] }})" placeholder="Priority" disabled>
+                    </div>
+                    {% end %}
+                    <br>
+            {%end%}
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}

@@ -1,0 +1,1 @@
+CREATE TABLE admin(name VARCHAR(50), password VARCHAR(30));
